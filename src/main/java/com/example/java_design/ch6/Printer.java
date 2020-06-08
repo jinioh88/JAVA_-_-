@@ -1,19 +1,17 @@
 package com.example.java_design.ch6;
 
 public class Printer {
-    private static Printer printer = null;
+    private static Printer printer = new Printer();
+    private int counter = 0;
 
     private Printer() {}
 
     public static Printer getPrinter() {
-        if(printer == null) {
-            printer  = new Printer();
-        }
-
         return printer;
     }
 
     public void print(String str) {
+        counter++;
         System.out.println(str);
     }
 }
