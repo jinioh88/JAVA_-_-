@@ -2,7 +2,7 @@ package com.example.java_design.ch09;
 
 import java.util.List;
 
-public class DataSheetView {
+public class DataSheetView implements Observer {
     private ScoreRecord scoreRecord;
     private int viewCount;
 

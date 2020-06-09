@@ -3,27 +3,13 @@ package com.example.java_design.ch09;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScoreRecord {
+public class ScoreRecord extends Subject {
     private List<Integer> scores = new ArrayList<>();
-    private List<DataSheetView> dataSheetViews = new ArrayList<>();
-    private MinMaxView minMaxView;
-
-    public void addDataSheetView(DataSheetView dataSheetView) {
-        dataSheetViews.add(dataSheetView);
-    }
-
-    public void setMinMaxView(MinMaxView minMaxView) {
-        this.minMaxView = minMaxView;
-    }
 
     public void addScore(int score) {
         scores.add(score);
 
-        for(DataSheetView dataSheetView : dataSheetViews) {
-            dataSheetView.update();
-        }
-
-        minMaxView.update();
+        notifyObservers();
     }
 
     public List<Integer> getScoreRecord() {
