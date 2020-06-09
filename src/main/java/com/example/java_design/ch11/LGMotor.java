@@ -10,23 +10,8 @@ public class LGMotor extends Motor {
         super(door);
     }
 
-    public void moveLGMotor(Direction direction) {
-
-    }
-
-    public void move(Direction direction) {
-        MotorStatus motorStatus = getMotorStatus();
-
-        if(motorStatus == MotorStatus.MOVING) {
-            return;
-        }
-
-        DoorStatus doorStatus = door.getDoorStatus();
-        if(doorStatus == DoorStatus.OPENED) {
-            door.close();
-        }
-
-        moveLGMotor(direction);
-        setMotorStatus(MotorStatus.MOVING);
+    @Override
+    protected void moveMotor(Direction direction) {
+        System.out.println("LG Motor");
     }
 }

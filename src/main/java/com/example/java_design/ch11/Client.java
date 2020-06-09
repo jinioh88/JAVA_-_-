@@ -5,7 +5,10 @@ import com.sun.javafx.scene.traversal.Direction;
 public class Client {
     public static void main(String[] args) {
         Door door = new Door();
-        HyundaiMotor hyundaiMotor = new HyundaiMotor(door);
+        Motor hyundaiMotor = new HyundaiMotor(door);
         hyundaiMotor.move(Direction.UP);
+
+        Motor lgMotor = new LGMotor(door);
+        lgMotor.move(Direction.UP);
     }
 }
