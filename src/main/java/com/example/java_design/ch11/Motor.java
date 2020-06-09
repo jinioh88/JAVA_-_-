@@ -1,5 +1,6 @@
 package com.example.java_design.ch11;
 
+
 import com.sun.javafx.scene.traversal.Direction;
 
 public abstract class Motor {
