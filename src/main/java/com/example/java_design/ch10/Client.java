@@ -2,10 +2,16 @@ package com.example.java_design.ch10;
 
 public class Client {
     public static void main(String[] args) {
-        RoadDisplay road = new RoadDisplay();
+        Display road = new RoadDisplay();
         road.draw();
 
-        RoadDisplay roadWithLane = new RoadDisplayWithLane();
+        Display roadWithLane = new LaneDecorator(new RoadDisplay());
         roadWithLane.draw();
+
+        Display roadWithTraffic = new TrafficDecorator(new RoadDisplay());
+        roadWithTraffic.draw();
+
+        Display roadWithLaneAndTraffic = new TrafficDecorator(new LaneDecorator(new RoadDisplay()));
+        roadWithLaneAndTraffic.draw();
     }
 }

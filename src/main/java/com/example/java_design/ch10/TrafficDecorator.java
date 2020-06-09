@@ -1,6 +1,10 @@
 package com.example.java_design.ch10;
 
-public class RoadDisplayWithTraffic extends RoadDisplay {
+public class TrafficDecorator extends DisplayDecorator {
+    public TrafficDecorator(Display decoratedDisplay) {
+        super(decoratedDisplay);
+    }
+
     @Override
     public void draw() {
         super.draw();
