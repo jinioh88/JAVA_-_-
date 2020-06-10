@@ -1,6 +1,6 @@
 package com.example.java_design.ch14;
 
-public class Speaker {
+public class Speaker extends ComputerDevice {
     private int price;
     private int power;
 

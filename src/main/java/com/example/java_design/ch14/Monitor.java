@@ -1,6 +1,6 @@
 package com.example.java_design.ch14;
 
-public class Monitor {
+public class Monitor extends ComputerDevice {
     private int price;
     private int power;
 
