@@ -1,5 +1,6 @@
-package com.example.java_design.ch11;
+package com.example.java_design.ch13;
 
+import com.example.java_design.ch11.MotorStatus;
 import com.sun.javafx.scene.traversal.Direction;
 
 public class HyundaiMotor extends Motor {
