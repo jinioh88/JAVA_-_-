@@ -1,13 +1,13 @@
 package com.example.java_design.ch13;
 
-public class LGElevatorFactory extends ElevatorFactory {
+public class HyundaiElevatorFactory extends ElevatorFactory {
     private static ElevatorFactory factory;
 
-    private LGElevatorFactory() {}
+    private HyundaiElevatorFactory() {}
 
     public static ElevatorFactory getInstance() {
         if(factory == null) {
-            factory = new LGElevatorFactory();
+            factory = new HyundaiElevatorFactory();
         }
 
         return factory;
@@ -15,11 +15,11 @@ public class LGElevatorFactory extends ElevatorFactory {
 
     @Override
     public Motor createMotor() {
-        return new LGMotor();
+        return new HyundaiMotor();
     }
 
     @Override
     public Door createDoor() {
-        return new LGDoor();
+        return new HyundaiDoor();
     }
 }
