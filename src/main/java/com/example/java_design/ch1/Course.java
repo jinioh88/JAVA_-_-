@@ -6,7 +6,7 @@ public class Course {
     private String id;
     private String name;
     private Integer numOfStudents = 0;
-    private List<Student> studentList;
+    private List<Transcript> transcripts;
 
     public void addStudent() {
 
