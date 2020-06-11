@@ -8,7 +8,11 @@ public class Course {
     private Integer numOfStudents = 0;
     private List<Student> studentList;
 
-    public void addStudent() {}
+    public void addStudent() {
 
-    public void deleteStudent() {}
+    }
+
+    public void deleteStudent() {
+
+    }
 }
