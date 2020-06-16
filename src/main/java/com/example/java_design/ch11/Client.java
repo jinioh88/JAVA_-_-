@@ -1,6 +1,7 @@
 package com.example.java_design.ch11;
 
-import com.sun.javafx.scene.traversal.Direction;
+
+import com.example.java_design.ch2.Direction;
 
 public class Client {
     public static void main(String[] args) {

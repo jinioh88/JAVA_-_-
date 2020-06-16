@@ -1,6 +1,6 @@
 package com.example.java_design.ch12;
 
-import com.sun.javafx.scene.traversal.Direction;
+import com.example.java_design.ch2.Direction;
 
 import java.util.ArrayList;
 import java.util.Calendar;

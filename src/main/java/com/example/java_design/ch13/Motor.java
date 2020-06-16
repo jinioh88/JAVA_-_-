@@ -3,7 +3,7 @@ package com.example.java_design.ch13;
 
 import com.example.java_design.ch11.DoorStatus;
 import com.example.java_design.ch11.MotorStatus;
-import com.sun.javafx.scene.traversal.Direction;
+import com.example.java_design.ch2.Direction;
 
 public abstract class Motor {
     protected Door door;
