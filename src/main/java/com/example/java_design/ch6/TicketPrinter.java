@@ -4,7 +4,7 @@ public class TicketPrinter {
     private static TicketPrinter ticketPrinter = null;
     private final int maxCount = 10;
 
-    protected TicketPrinter() {}
+    public TicketPrinter() {}
 
     public synchronized static TicketPrinter getInstance() {
         if(ticketPrinter == null) {

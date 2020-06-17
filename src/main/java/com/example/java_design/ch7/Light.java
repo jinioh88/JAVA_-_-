@@ -3,7 +3,6 @@ package com.example.java_design.ch7;
 public class Light {
     private State state;
 
-
     public void setState(State state) {
         this.state = state;
     }
