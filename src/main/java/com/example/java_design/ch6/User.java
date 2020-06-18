@@ -8,7 +8,7 @@ public class User {
     }
 
     public void print() {
-        Printer printer = Printer.getPrinter();
-        printer.print(this.name + " print using " + printer.toString() + ".");
+//        Printer printer = Printer.getPrinter();
+//        printer.print(this.name + " print using " + printer.toString() + ".");
     }
 }
